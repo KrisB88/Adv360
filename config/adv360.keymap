@@ -60,11 +60,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1           &kp N2              &kp N3              &kp N4            &kp N5  &tog 1                                                          &mo 3      &kp N6  &kp N7                 &kp N8          &kp N9               &kp N0              &kp MINUS
-&kp TAB    &kp Q            &kp W               &kp E               &kp R             &kp T   &none                                                           &none      &kp Y   &kp U                  &kp I           &kp O                &kp P               &kp BSLH
-&kp ESC    &lh_pht LCTRL A  &lh_pht LEFT_ALT S  &lh_pht LEFT_GUI D  &lh_pht LSHIFT F  &kp G   &none     &kp LCMD  &kp LALT      &kp RCTRL  &kp RIGHT_COMMAND  &none      &kp H   &rh_pht RIGHT_SHIFT J  &rh_pht RGUI K  &rh_pht RIGHT_ALT L  &rh_pht RCTRL SEMI  &kp SQT
-&kp LSHFT  &kp Z            &kp X               &kp C               &kp V             &kp B                       &kp HOME      &kp PG_UP                                &kp N   &kp M                  &kp COMMA       &kp DOT              &kp FSLH            &kp RSHFT
-&mo 2      &kp GRAVE        &kp CAPS            &kp LEFT            &kp RIGHT                 &kp BSPC  &kp DEL   &kp END       &kp PG_DN  &kp ENTER          &kp SPACE          &kp UP                 &kp DOWN        &kp LBKT             &kp RBKT            &mo 2
+&kp EQUAL  &kp N1           &kp N2              &kp N3              &kp N4            &kp N5  &tog 1                                                           &mo 3      &kp N6  &kp N7                 &kp N8          &kp N9               &kp N0              &kp MINUS
+&kp TAB    &kp Q            &kp W               &kp E               &kp R             &kp T   &none                                                            &none      &kp Y   &kp U                  &kp I           &kp O                &kp P               &kp BSLH
+&kp ESC    &lh_pht LCTRL A  &lh_pht LEFT_ALT S  &lh_pht LEFT_GUI D  &lh_pht LSHIFT F  &kp G   &none     &kp LCMD   &kp LALT      &kp RCTRL  &kp RIGHT_COMMAND  &none      &kp H   &rh_pht RIGHT_SHIFT J  &rh_pht RGUI K  &rh_pht RIGHT_ALT L  &rh_pht RCTRL SEMI  &kp SQT
+&kp LSHFT  &kp Z            &kp X               &kp C               &kp V             &kp B                        &kp HOME      &kp PG_UP                                &kp N   &kp M                  &kp COMMA       &kp DOT              &kp FSLH            &kp RSHFT
+&mo 2      &kp GRAVE        &kp CAPS            &kp LEFT            &kp RIGHT                 &kp BSPC  &lt 4 DEL  &kp END       &kp PG_DN  &kp ENTER          &kp SPACE          &kp UP                 &kp DOWN        &kp LBKT             &kp RBKT            &mo 2
             >;
         };
 
@@ -95,6 +95,16 @@
 &none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &macro_ver    &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
+            >;
+        };
+
+        symbol {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans                &trans                 &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans                &trans                 &trans  &trans
             >;
         };
     };
